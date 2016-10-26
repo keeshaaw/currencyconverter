@@ -10,6 +10,7 @@ public class ConverterBean
 {
   private double yenRate = 83.0602;
   private double euroRate = 0.0093016;
+  private double inrRate = 0.015;
   
   public double dollarToYen(double dollers)
   {
@@ -21,7 +22,7 @@ public class ConverterBean
     return yen * euroRate;
   }
   
-  public void test(){
-	  System.out.println("dummy method ");
+  public double dollerToINR(double dollers){
+	  return dollers * inrRate;
   }
 }
